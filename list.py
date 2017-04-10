@@ -14,4 +14,4 @@ def connect():
 conn = connect()
 core = conn.get_object(object_path="/org/pulseaudio/core1")
 
-print (core.Get("org.PulseAudio.Core1", "Sinks", dbus_interface="org.freedeskto$
+print (core.Get("org.PulseAudio.Core1", "Sinks", dbus_interface="org.freedesktop.DBus.Properties")[0])
